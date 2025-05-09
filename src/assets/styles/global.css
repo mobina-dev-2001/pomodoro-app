@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Roboto+Slab:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+    /* colors */
+    --color-theme: hsl(0, 91%, 71%);
+    
+    --color-froly: hsl(0, 91%, 71%);
+    --color-mercury: hsl(0, 3%, 89%);
+    --color-malibu: hsl(182, 91%, 71%);
+    --color-heliotrope: hsl(284, 89%, 74%);
+    --color-white-lilac: hsl(229, 52%, 96%);
+    --color-periwinkle: hsl(227, 100%, 92%);
+    --color-cloud-burst: hsl(234, 40%, 25%);
+    --color-mirage: hsl(234, 39%, 14%);
+    --color-ebony-dark: hsl(234, 45%, 13%);
+    --color-ebony: hsl(234, 50%, 11%);
+    --color-rhino: hsl(235, 32%, 27%);
+    --color-port-gore: hsl(235, 35%, 18%);    
+
+    /* font families */
+    --font-theme: 'Kumbh Sans', sans-serif;
+
+    --font-kumbh-sans: 'Kumbh Sans', sans-serif;
+    --font-roboto-slab: 'Roboto Slab', sans-serif;
+    --font-space-mono: 'Space Mono', sans-serif;
+}
+
+@layer utilities {
+    ::selection {background: var(--color-theme); color: var(--color-gray-300)}
+    ::-webkit-scrollbar {width: 5px;}
+    ::-webkit-scrollbar-track {background: var(--color-mirage); border-radius: 5px;}
+    ::-webkit-scrollbar-thumb {background: var(--color-theme); border-radius: 5px;}
+    ::-webkit-scrollbar-thumb:hover {background: var(--color-theme);}
+}
